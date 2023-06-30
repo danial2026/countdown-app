@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Countdown */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Your Font Name', sans-serif;
+  background-color: #000;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.countdown-container {
+  text-align: center;
+}
+
+.countdown-text {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  font-size: 120px;
+  color: #fff;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.countdown-text {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+ 
+.percentage {
+  font-size: 32px;
+  color: #fff;
+}
+
+
+/* Calendar */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.calendar-container {
+  width: 50%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 20px;
+}
+
+
+.day {
+  position: relative;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  border: 2px solid transparent; /* Add this line to set initial border properties */
+}
+
+.day:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.day:hover {
+  border-color: #064273; /* Add this line to change border color on hover */
+}
+
+.day.today {
+  border-color: #76b6c4 ; /* Add this line to change border color for today's date */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
