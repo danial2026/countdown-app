@@ -116,7 +116,7 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: border-color 0.3s ease;
-  border: 2px solid transparent; /* Add this line to set initial border properties */
+  border: 2px solid transparent; 
 }
 
 .day:before {
@@ -133,14 +133,24 @@ body {
 }
 
 .day:hover {
-  border-color: #064273; /* Add this line to change border color on hover */
+  border-color: #064273; 
 }
 
 .day.today {
-  border-color: #76b6c4 ; /* Add this line to change border color for today's date */
+  border-color: #76b6c4 ; 
 }
 
 h1 {
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .container {
+    display: none;
+  }
 }

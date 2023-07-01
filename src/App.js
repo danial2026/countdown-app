@@ -77,9 +77,12 @@ const Calendar = () => {
 
 const App = () => {
   return (
+    <div>
     <div className="app-container">
       <Countdown />
-      <Calendar />
+      {/* <Calendar /> */}
+    </div>
+    <Calendar />
     </div>
   );
 };
