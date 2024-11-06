@@ -8,7 +8,7 @@ const Countdown = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const targetDate = new Date('January 1, 2026 00:00:00');
-      const startDate = new Date('January 1, 2023 00:00:00');
+      const startDate = new Date('December 25, 1999 00:00:00');
       const now = new Date().getTime();
       const distanceTotal = targetDate - startDate;
       const distanceRemaining = targetDate - now;
